@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PickPocket Deals — Hand-Picked Amazon Finds</title>
+  <meta name="description" content="Hand-picked product finds across tech, home, fitness, books and travel.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛍️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="disclosure-bar">
+    As an Amazon Associate I earn from qualifying purchases. <a href="disclosure.html">Learn more</a>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html"><span>🛍️</span> <b id="siteName">PickPocket Deals</b></a>
+    <nav><a href="#picks">Picks</a><a href="disclosure.html">Disclosure</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">Curated · No sponsored rankings</p>
+    <h1>Good stuff, <em>without</em> the endless scrolling.</h1>
+    <p class="lead" id="tagline">Hand-picked finds across tech, home, fitness and more.</p>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Search picks — e.g. earbuds, kettle, yoga" aria-label="Search picks">
+    </div>
+  </section>
+
+  <main id="picks">
+    <div class="filters" id="filters" role="tablist"></div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>No picks match that search.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p><b>Affiliate disclosure:</b> PickPocket Deals is a participant in the Amazon Services LLC Associates Program,
+      an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising
+      and linking to Amazon.com. Prices and availability are shown on Amazon at the time of purchase.</p>
+    <p class="small">Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.
+      · <a href="disclosure.html">Disclosure</a> · <a href="privacy.html">Privacy</a> · © <span id="year"></span></p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
